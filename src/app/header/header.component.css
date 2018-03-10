@@ -1,0 +1,61 @@
+.logo {
+  background-image: url("/assets/LOGO.png");
+  width: 190px;
+  height: 135px;
+}
+
+/*.my-nav-active {
+  background-image: url("/assets/utils/navpointer.png");
+  width: 12px;
+  height: 4px;
+}*/
+
+.nav-item {
+  width: 170px;
+  text-align: center;
+}
+
+.active {
+  color: rgb(238, 125, 125) !important;
+  font-weight: bold;
+}
+
+
+.nav-link {
+  font-family: "SVN-Gilroy";
+  color: rgb( 74, 74, 74);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.nav-link:hover {
+  color: rgb(238, 125, 125);
+  font-weight: bold;
+}
+
+.active:after {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 5px solid rgba(128, 128, 128, 0);
+  border-top-color: #808080;
+  margin-top: 20px;
+}
+
+.nav-item:hover:after {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 5px solid rgba(128, 128, 128, 0);
+  border-top-color: #808080;
+  margin-top: 20px;
+}
+
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url("/assets/fonts/SVN-Gilroy Regular.otf");
+}

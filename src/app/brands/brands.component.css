@@ -1,0 +1,74 @@
+.myungjo {
+  font-family: "Myungjo";
+  color: rgb( 36, 36, 36);
+  line-height: 1.2;
+  font-size: 40px;
+}
+
+.malgun {
+  font-size: 14px;
+  font-family: 'Malgun Gothic';
+  color: rgb(0, 0, 0);
+  line-height: 1.929;
+}
+
+.arial {
+  font-size: 14px;
+  font-family: "Arial", serif;
+  color: rgb(89, 89, 89);
+  line-height: 1.2;
+}
+
+.btn {
+  width: 150px;
+  height: 45px;
+  border: 2px solid rgb(128, 128, 128);
+}
+
+.separator {
+  margin-top: 75px;
+  margin-bottom: 50px;
+
+}
+
+.separator:before {
+  content: url("/assets/seperator.png");
+  position: relative;
+  display: block;
+  left: 50%;
+  transform: translate(-96px, 0);
+}
+
+.business-item {
+  max-width: 330px;
+}
+
+.business-item > .vector {
+  min-height: 162px;
+  position: relative;
+}
+
+.business-item .vector img {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.malgunB {
+  font-size: 40px;
+  font-family: 'Malgun Gothic';
+  color: rgb(0, 0, 0);
+  line-height: 1.929;
+}
+
+@font-face {
+  font-family: 'Myungjo';
+  src: url("/assets/fonts/Adobe Myungjo Std M.otf");
+}
+
+@font-face {
+  font-family: 'Malgun Gothic';
+  src: url("/assets/fonts/malgun.ttf");
+}

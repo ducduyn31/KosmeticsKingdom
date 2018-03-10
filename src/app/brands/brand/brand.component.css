@@ -1,0 +1,13 @@
+.product-wrapper {
+  position: relative;
+  min-height: 510px;
+  width: 100%;
+}
+
+.product-left {
+  transform: translate(-27%, 0);
+}
+
+.product-info {
+  transform: translate(272px, 126px);
+}
