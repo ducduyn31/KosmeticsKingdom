@@ -1,11 +1,16 @@
-<div class="text-center d-flex product-wrapper">
-  <img class="position-absolute product-left" src="/assets/products/shiningcellsbg.png" alt="">
-  <div class="mt-5 position-absolute product-info">
-    <p class="arial p-0 mb-0">즉각적인 미백효과 + 자외선 차단효과를 가지는 </p>
-    <p class="arial p-0 mb-0">바디로션 </p>
-    <p class="arial p-0 mb-0">자연스러운 톤업 & 물광 피부 </p>
-    <p class="arial p-0 mb-0">피부 깊숙이 생기 있고 화사한 피부톤을  </p>
-    <p class="arial p-0">부여하는크림 </p>
+<!--<img src="/assets/products/shiningcells.png" class="position-absolute">
+<div class="product-wrapper border-custom">
+  <div class="mt-5 mb-5 product-info text-center">
+    <p class="arial">{{product.description}}</p>
     <button class="btn btn-outline-secondary arial">View more &rarr;</button>
+  </div>
+</div>
+-->
+<div class="row">
+  <div class="col-md-4"><img src="{{product.imgPath}}" alt=""></div>
+  <div class="col-md-8 text-center d-flex flex-row justify-content-center align-items-center flex-wrap">
+    <p class="arial w-75">{{product.description}}</p>
+    <div class="w-100"></div>
+    <a [routerLink]="[product.name.toLowerCase().replace(' ', '')]" class="btn btn-outline-secondary">View more &rarr;</a>
   </div>
 </div>

@@ -1,0 +1,13 @@
+.theLine {
+  width: 100%;
+}
+
+.theLine:after {
+  position: absolute;
+  content: '.';
+  top: 0px;
+  font-size: 98px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}

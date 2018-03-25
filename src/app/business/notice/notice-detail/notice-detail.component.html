@@ -1,0 +1,6 @@
+<div *ngIf="showNoticeDetail">
+  <h4>{{theNotice.subject}}</h4>
+  <p> Author: {{theNotice.author}} | {{theNotice.date.getUTCFullYear()}}-{{theNotice.date.getUTCMonth()}}-{{theNotice.date.getUTCDate()}} | {{theNotice.viewNumber}} views</p>
+
+  <div [innerHTML]="theNotice.rawContent | keepHtmlDetail" class="w-100"></div>
+</div>

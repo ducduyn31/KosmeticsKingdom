@@ -42,8 +42,17 @@
   <h1 class="col-12 svn">Business Process</h1>
 </div>
 
+<div class="row">
+  <div class="col-md-4 d-flex flex-column p-0" *ngFor="let pc of businessProcesses">
+    <app-process [process]="pc" class="d-flex flex-column mr-0 ml-0 pr-0 pl-0"></app-process>
+  </div>
+</div>
+
 <div class="separator"></div>
 
 <div class="row text-center">
   <h1 class="col-12 svn">Notice</h1>
+</div>
+<div class="row text-center arial">
+  <app-notice class="w-100 mt-5"></app-notice>
 </div>

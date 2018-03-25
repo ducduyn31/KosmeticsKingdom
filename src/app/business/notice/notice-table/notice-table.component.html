@@ -1,0 +1,20 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>No.</th>
+    <th>Subject</th>
+    <th>Autdor</th>
+    <th>Date</th>
+    <th>View</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let notice of notices" routerLink="." [queryParams]="{notice: notice.id}">
+    <td>{{notice.id}}</td>
+    <td>{{notice.subject}}</td>
+    <td>{{notice.author}}</td>
+    <td>{{notice.date.getUTCFullYear()}} - {{notice.date.getUTCMonth()}} - {{notice.date.getUTCDate()}}</td>
+    <td>{{notice.viewNumber}}</td>
+  </tr>
+  </tbody>
+</table>
