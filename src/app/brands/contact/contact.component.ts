@@ -34,8 +34,6 @@ export class ContactComponent implements OnInit, OnDestroy {
     }
     let fd = new FormData();
 
-    console.log(values);
-
     Object.keys(values).map(
       (inputKey: string) => {
         fd.append(inputKey, values[inputKey]);
@@ -47,8 +45,12 @@ export class ContactComponent implements OnInit, OnDestroy {
 
     this.formSub = this.contactService.submitFormToServer(fd).subscribe(
       (res: any) => {
-
-        console.log(res);
+        if (res.errors && res.name === 'ValidationError') {
+          alert('Form is Invalid');
+        } else {
+          alert('Submitted');
+          form.resetForm();
+        }
       }
     );
   }

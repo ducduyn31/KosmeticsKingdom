@@ -20,7 +20,7 @@ export class NoticeDetailComponent implements OnInit {
 
   ngOnInit() {
     this._route.queryParams.subscribe(
-      async (params: Params) => {
+      (params: Params) => {
         /*this.noticeSub = this.noticeService.getNoticeById(+params['notice']).subscribe(
           (notice: Notice) => {
             if (notice) {
@@ -31,8 +31,8 @@ export class NoticeDetailComponent implements OnInit {
             }
           }
         );*/
-        this.showNoticeDetail = true;
-        this.theNotice = await this.noticeService.getNoticeById(+params['notice']);
+        this.theNotice = this.noticeService.getNoticeById(+params['notice']);
+        this.showNoticeDetail = !!this.theNotice;
       }
     );
   }

@@ -2,7 +2,7 @@
   <h3 class="mb-4 myungjo">소개</h3>
   <p class="malgun">상표 로고 및 컬러는  Kosmetics Kingdom 의 비즈니스 철학 및 방향을 의미합니다</p>
   <p class="malgun">  The CI, symbol, color imply the business philosophy & direction of Kosmetics Kingdom</p>
-  <button class="btn btn-outline-secondary arial">View more &rarr;</button>
+  <button class="btn btn-outline-secondary arial" [routerLink]="['/']">View more &rarr;</button>
 </div>
 <div class="separator"></div>
 
@@ -19,7 +19,7 @@
     </div>
     <h4>R&D Center</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-    <button class="btn btn-outline-secondary arial">View more &rarr;</button>
+    <button class="btn btn-outline-secondary arial" [routerLink]="['/business']" fragment="thernd">View more &rarr;</button>
   </div>
   <div class="text-center col-md-6 col-sm-12 business-item mx-auto">
     <div class="vector">
@@ -27,7 +27,7 @@
     </div>
     <h4>Business Process</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-    <button class="btn btn-outline-secondary arial">View more &rarr;</button>
+    <button class="btn btn-outline-secondary arial" [routerLink]="['/business']" fragment="thebp">View more &rarr;</button>
   </div>
 </div>
 

@@ -15,15 +15,10 @@ export class NoticeTableComponent implements OnInit, OnDestroy{
 
   constructor(private noticeService: NoticeService) { }
 
-  async ngOnInit() {
+  ngOnInit() {
     this.noticesSub = this.noticeService.getAllNotices().subscribe(
-      (res: { _id: string, subject: string, author: string, date: string, view: number }[]) => {
-        let counterId = 0;
-        res.forEach(
-          (notice) => {
-            this.notices.push(new Notice(++counterId, notice._id, notice.subject, notice.author, new Date(notice.date), notice.view, '', false));
-          }
-        )
+      (notices: Notice[]) => {
+        this.notices = notices;
       }
     );
     //this.notices = await this.noticeService.getAllNotices();
